@@ -1,9 +1,9 @@
-import Publisher from "./Publisher";
-import CreditHandler from "./CreditHandler";
-import DebitHandler from "./DebitHandler";
-import TransferHandler from "./TransferHandler";
-import AccountRepositoryMemory from "./AccountRepositoryMemory";
-import AccountApplicationService from "./AccountApplicationService";
+import Publisher from "../src/infra/queue/Publisher";
+import CreditHandler from "../src/domain/handler/CreditHandler";
+import DebitHandler from "../src/domain/handler/DebitHandler";
+import TransferHandler from "../src/domain/handler/TransferHandler";
+import AccountRepositoryMemory from "../src/infra/repository/AccountRepositoryMemory";
+import AccountApplicationService from "../src/application/service/AccountApplicationService";
 
 let service: AccountApplicationService;
 

@@ -1,7 +1,7 @@
-import Observer from "./Observer";
-import AccountRepository from "./AccountRepository";
-import TransferCommand from "./TransferCommand";
-import TransferService from "./TransferService";
+import Observer from "../../infra/queue/Observer";
+import AccountRepository from "../repository/AccountRepository";
+import TransferCommand from "../../application/command/TransferCommand";
+import TransferService from "../service/TransferService";
 
 export default class TransferHandler implements Observer {
 	operation = "transfer";
